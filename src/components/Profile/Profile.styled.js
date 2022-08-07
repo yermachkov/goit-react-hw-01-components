@@ -1,8 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Card = styled.div`
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto;
   width: 300px;
   height: 400px;
   display: flex;
