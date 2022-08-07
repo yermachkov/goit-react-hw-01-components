@@ -16,7 +16,6 @@ margin: 0;
 
 export const Stats = styled.ul`
   display: flex;
-  background-color: ${getRandomHexColor()};
 `;
 
 
@@ -28,8 +27,7 @@ export const StatsItem = styled.li`
   align-items: center;
   padding: 15px;
   color: #fff;
-
-`
+`;
 
 export const Label = styled.span`
   font-size: 14px;
@@ -38,10 +36,5 @@ export const Label = styled.span`
 
 export const Percentage = styled.span`
   font-size: 20px;
+  font-weight: 500;
 `;
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`
-};
