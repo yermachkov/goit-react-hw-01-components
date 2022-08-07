@@ -65,7 +65,7 @@ export const StatsItem = styled.li`
   justify-content: center;
   width: calc(350px / 3);
   background-color: #e9ecef;
-  border: 0.5px solid #dee2e6;
+  border: 1px solid #dee2e6;
 `
 
 export const Label = styled.span`
