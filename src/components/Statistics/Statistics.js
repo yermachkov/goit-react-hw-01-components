@@ -23,7 +23,7 @@ export const Statistics = ({ title, stats }) => {
 Statistics.propTypes = {
   title: PropTypes.string,
   data: PropTypes.exact({
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   })
 };
