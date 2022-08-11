@@ -1,11 +1,6 @@
 import PropTypes from 'prop-types';
 import { Section, Title, Stats, StatsItem, Label, Percentage } from './Statistics.styled';
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`
-};
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -15,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
       <Stats>
         {stats.map(({id, label, percentage}) => {
           return (
-            <StatsItem key={id} style={{backgroundColor: getRandomHexColor()}}>
+            <StatsItem key={id}>
               <Label>{label}</Label>
               <Percentage>{percentage}%</Percentage>
             </StatsItem>
@@ -27,7 +22,7 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  data: PropTypes.exact({
+  stats: PropTypes.exact({
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
   })
